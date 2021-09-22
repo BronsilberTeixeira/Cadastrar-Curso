@@ -21,8 +21,8 @@ namespace ControleDeCursos
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             //CADASTRAR
-            objProfessor.nomeCompleto = txtNomeCompleto.Text;
-            objProfessor.codigo = int.Parse(txtCodigo.Text);
+            objProfessor.nome = txtNomeCompleto.Text;
+            objProfessor.codigo = txtCodigo.Text;
             objProfessor.valorHora = Double.Parse(txtValorHora.Text);
             objProfessor.telefone = txtTelefone.Text;
             objProfessor.CadastraProfessor();

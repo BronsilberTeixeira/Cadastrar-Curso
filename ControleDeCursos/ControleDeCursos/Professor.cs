@@ -9,8 +9,7 @@ namespace ControleDeCursos
 {
     class Professor
     {
-        public int codigo;
-        public string nomeCompleto, telefone;
+        public string nome, telefone, codigo;
         public double valorHora;
         string tabela = "tbl_professor";
         Conexao objConexao = new Conexao();
@@ -19,7 +18,7 @@ namespace ControleDeCursos
         {
             //Passo: comando sql - insert into 
             string inserir = $"insert into {tabela} values " +
-                $"(nul,'{nomeCompleto}','{telefone}', '{valorHora}'," +
+                $"('{nome}','{telefone}', '{valorHora}'," +
                 $"'{codigo}' )";
             //Passo2: executar o comando sql 
             objConexao.ExecutarComando(inserir);
@@ -36,7 +35,7 @@ namespace ControleDeCursos
         {
     
                 string alterar = $@"update {tabela} set 
-                nome= '{nomeCompleto}',
+                nome= '{nome}',
                 valorHora='{valorHora}',
                 telefone='{telefone}' where codigo='{codigo}';";
                 objConexao.ExecutarComando(alterar);
