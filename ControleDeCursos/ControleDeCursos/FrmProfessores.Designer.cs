@@ -29,7 +29,7 @@ namespace ControleDeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtNomeCompleto = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -47,12 +47,12 @@ namespace ControleDeCursos
             ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtNomeCompleto
+            // txtNome
             // 
-            this.txtNomeCompleto.Location = new System.Drawing.Point(116, 41);
-            this.txtNomeCompleto.Name = "txtNomeCompleto";
-            this.txtNomeCompleto.Size = new System.Drawing.Size(328, 20);
-            this.txtNomeCompleto.TabIndex = 5;
+            this.txtNome.Location = new System.Drawing.Point(116, 41);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(328, 20);
+            this.txtNome.TabIndex = 5;
             // 
             // label2
             // 
@@ -154,6 +154,7 @@ namespace ControleDeCursos
             this.dtgProfessor.Name = "dtgProfessor";
             this.dtgProfessor.Size = new System.Drawing.Size(432, 150);
             this.dtgProfessor.TabIndex = 23;
+            this.dtgProfessor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgProfessor_CellContentClick);
             // 
             // label4
             // 
@@ -184,13 +185,14 @@ namespace ControleDeCursos
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtValorHora);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtNomeCompleto);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Name = "FrmProfessores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Protótipo: PROFESSORES";
+            this.Load += new System.EventHandler(this.FrmProfessores_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).EndInit();
             this.ResumeLayout(false);
@@ -200,7 +202,7 @@ namespace ControleDeCursos
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtNomeCompleto;
+        private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;

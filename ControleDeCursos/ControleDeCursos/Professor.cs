@@ -18,8 +18,8 @@ namespace ControleDeCursos
         {
             //Passo: comando sql - insert into 
             string inserir = $"insert into {tabela} values " +
-                $"('{nome}','{telefone}', '{valorHora}'," +
-                $"'{codigo}' )";
+                $"('{codigo}','{nome}', '{valorHora}'," +
+                $"'{telefone}' )";
             //Passo2: executar o comando sql 
             objConexao.ExecutarComando(inserir);
         }
