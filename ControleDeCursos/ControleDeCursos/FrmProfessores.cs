@@ -17,9 +17,24 @@ namespace ControleDeCursos
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        Professor objProfessor = new Professor();
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
-
+            //CADASTRAR
+            objProfessor.nomeCompleto = txtNomeCompleto.Text;
+            objProfessor.codigo = int.Parse(txtCodigo.Text);
+            objProfessor.valorHora = Double.Parse(txtValorHora.Text);
+            objProfessor.telefone = txtTelefone.Text;
+            objProfessor.CadastraProfessor();
+            MessageBox.Show("Registro cadastrado com sucesso!");
+            //Limpando os campos
+            txtNomeCompleto.Clear();
+            txtCodigo.Clear();
+            txtValorHora.Clear();
+            txtTelefone.Clear();
+            dtgProfessor.DataSource = objProfessor.ListarProfessor();
         }
+
+
     }
 }

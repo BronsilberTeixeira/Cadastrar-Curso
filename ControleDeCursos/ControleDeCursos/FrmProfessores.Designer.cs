@@ -29,30 +29,30 @@ namespace ControleDeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNomeCompleto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtValorHora = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.dtgProfessor = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txtNomeCompleto
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(328, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtNomeCompleto.Location = new System.Drawing.Point(116, 41);
+            this.txtNomeCompleto.Name = "txtNomeCompleto";
+            this.txtNomeCompleto.Size = new System.Drawing.Size(328, 20);
+            this.txtNomeCompleto.TabIndex = 5;
             // 
             // label2
             // 
@@ -63,12 +63,12 @@ namespace ControleDeCursos
             this.label2.TabIndex = 6;
             this.label2.Text = "Nome Completo:";
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtCodigo.Location = new System.Drawing.Point(116, 6);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 4;
             // 
             // label1
             // 
@@ -79,12 +79,12 @@ namespace ControleDeCursos
             this.label1.TabIndex = 3;
             this.label1.Text = "Código do Professor:";
             // 
-            // textBox3
+            // txtValorHora
             // 
-            this.textBox3.Location = new System.Drawing.Point(116, 79);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.txtValorHora.Location = new System.Drawing.Point(116, 79);
+            this.txtValorHora.Name = "txtValorHora";
+            this.txtValorHora.Size = new System.Drawing.Size(100, 20);
+            this.txtValorHora.TabIndex = 8;
             // 
             // label3
             // 
@@ -98,66 +98,60 @@ namespace ControleDeCursos
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnCadastrar);
+            this.panel1.Controls.Add(this.btnAlterar);
+            this.panel1.Controls.Add(this.btnLimpar);
+            this.panel1.Controls.Add(this.btnExcluir);
             this.panel1.Location = new System.Drawing.Point(12, 113);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(432, 57);
             this.panel1.TabIndex = 22;
             // 
-            // button1
+            // btnCadastrar
             // 
-            this.button1.Location = new System.Drawing.Point(27, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 30);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "CADASTRAR ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Location = new System.Drawing.Point(27, 13);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(90, 30);
+            this.btnCadastrar.TabIndex = 6;
+            this.btnCadastrar.Text = "CADASTRAR ";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // button2
+            // btnAlterar
             // 
-            this.button2.Location = new System.Drawing.Point(123, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 30);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "ALTERAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAlterar.Location = new System.Drawing.Point(123, 13);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(90, 30);
+            this.btnAlterar.TabIndex = 7;
+            this.btnAlterar.Text = "ALTERAR";
+            this.btnAlterar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnLimpar
             // 
-            this.button4.Location = new System.Drawing.Point(318, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 30);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "LISTAR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLimpar.Location = new System.Drawing.Point(318, 13);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(90, 30);
+            this.btnLimpar.TabIndex = 9;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnExcluir
             // 
-            this.button3.Location = new System.Drawing.Point(222, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 30);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "EXCLUIR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExcluir.Location = new System.Drawing.Point(222, 13);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(90, 30);
+            this.btnExcluir.TabIndex = 8;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dtgProfessor
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 186);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(432, 150);
-            this.dataGridView1.TabIndex = 23;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(345, 79);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 25;
+            this.dtgProfessor.BackgroundColor = System.Drawing.Color.White;
+            this.dtgProfessor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgProfessor.Location = new System.Drawing.Point(12, 186);
+            this.dtgProfessor.Name = "dtgProfessor";
+            this.dtgProfessor.Size = new System.Drawing.Size(432, 150);
+            this.dtgProfessor.TabIndex = 23;
             // 
             // label4
             // 
@@ -167,7 +161,14 @@ namespace ControleDeCursos
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 24;
             this.label4.Text = "Telefone:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.Location = new System.Drawing.Point(344, 79);
+            this.txtTelefone.Mask = "(99)00000-9999";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(100, 20);
+            this.txtTelefone.TabIndex = 25;
             // 
             // FrmProfessores
             // 
@@ -175,21 +176,21 @@ namespace ControleDeCursos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(455, 353);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgProfessor);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtValorHora);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtNomeCompleto);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Name = "FrmProfessores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Protótipo: PROFESSORES";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgProfessor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,19 +198,19 @@ namespace ControleDeCursos
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNomeCompleto;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtValorHora;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.DataGridView dtgProfessor;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MaskedTextBox txtTelefone;
     }
 }

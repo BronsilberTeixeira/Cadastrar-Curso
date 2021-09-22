@@ -117,6 +117,7 @@
     <Compile Include="FrmTurmas.Designer.cs">
       <DependentUpon>FrmTurmas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Professor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmPrincipal.resx">
