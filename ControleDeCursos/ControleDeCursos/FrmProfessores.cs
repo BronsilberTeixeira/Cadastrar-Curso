@@ -35,6 +35,27 @@ namespace ControleDeCursos
             dtgProfessor.DataSource = objProfessor.ListarProfessor();
         }
 
+        private void btnAlterar_Click(object sender, EventArgs e)
+        {
+            //alterar
+            objProfessor.nome = txtNomeCompleto.Text;
+            objProfessor.valorHora = Double.Parse(txtValorHora.Text);
+            objProfessor.telefone = txtTelefone.Text;
+            objProfessor.AlterarProfessor();
+            MessageBox.Show("Registro alterado com sucesso!");
+            txtNomeCompleto.Clear();
+            txtCodigo.Clear();
+            txtValorHora.Clear();
+            txtTelefone.Clear();
+            dtgProfessor.DataSource = objProfessor.ListarProfessor();
+        }
 
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            objProfessor.codigo = txtCodigo.Text;
+            objProfessor.ExcluirProfessor();
+            MessageBox.Show("Registro Excluido com sucesso!!");
+            dtgProfessor.DataSource = objProfessor.ListarProfessor();
+        }
     }
 }

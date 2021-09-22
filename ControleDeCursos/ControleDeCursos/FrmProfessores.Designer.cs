@@ -125,6 +125,7 @@ namespace ControleDeCursos
             this.btnAlterar.TabIndex = 7;
             this.btnAlterar.Text = "ALTERAR";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnLimpar
             // 
@@ -143,6 +144,7 @@ namespace ControleDeCursos
             this.btnExcluir.TabIndex = 8;
             this.btnExcluir.Text = "EXCLUIR";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // dtgProfessor
             // 
