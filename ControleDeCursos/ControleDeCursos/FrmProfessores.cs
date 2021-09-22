@@ -72,5 +72,13 @@ namespace ControleDeCursos
         {
             dtgProfessor.DataSource = objProfessor.ListarProfessor();
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNome.Clear();
+            txtCodigo.Clear();
+            txtValorHora.Clear();
+            txtTelefone.Clear();
+        }
     }
 }
