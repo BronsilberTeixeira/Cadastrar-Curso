@@ -28,11 +28,9 @@ namespace ControleDeCursos
             cbxCurso.DataSource = objCurso.Listar();
             cbxCurso.ValueMember = "codigo";
             cbxCurso.DisplayMember = "nome";
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
+
+
     }
 }

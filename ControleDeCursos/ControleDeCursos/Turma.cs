@@ -14,7 +14,7 @@ namespace ControleDeCursos
         string tabela = "tbl_turma";
         Conexao objConexao = new Conexao();
 
-        public void CadastraProfessor()
+        public void CadastraTurma()
         {
             //Passo: comando sql - insert into 
             string inserir = $"insert into {tabela} values " +
@@ -24,14 +24,14 @@ namespace ControleDeCursos
             objConexao.ExecutarComando(inserir);
         }
 
-        public DataTable ListarProfessor()
+        public DataTable ListarTurma()
         {
             //Passo 1- comando sql
             string listar = $"select * from {tabela} order by codigo";
             return objConexao.ExecutarConsulta(listar);
         }
 
-        public void AlterarProfessor()
+        public void AlterarTurma()
         {
 
             string alterar = $@"update {tabela} set 
@@ -44,7 +44,7 @@ namespace ControleDeCursos
             objConexao.ExecutarComando(alterar);
         }
 
-        public void ExcluirProfessor()
+        public void ExcluirTurma()
         {
             string excluir = $"delete from {tabela} where codigo='{codigo}';";
             objConexao.ExecutarComando(excluir);
