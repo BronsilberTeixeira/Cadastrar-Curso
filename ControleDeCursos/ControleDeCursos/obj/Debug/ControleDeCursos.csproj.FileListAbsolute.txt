@@ -103,3 +103,13 @@ C:\Users\HP\source\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\C
 C:\Users\HP\source\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.csproj.CopyComplete
 C:\Users\HP\source\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.exe
 C:\Users\HP\source\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.pdb
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.csprojAssemblyReference.cache
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.exe.config
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.FrmPrincipal.resources
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.FrmCursos.resources
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.FrmProfessores.resources
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.FrmTurmas.resources
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.Properties.Resources.resources
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.csproj.GenerateResource.cache
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.exe
+H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.pdb

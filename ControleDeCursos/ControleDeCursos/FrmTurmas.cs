@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ControleDeCursos
@@ -31,6 +24,21 @@ namespace ControleDeCursos
 
         }
 
-
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            //CADASTRAR
+            objTurma.codigo = int.Parse(txtCodigo.Text);
+            objProfessor.nome = txtNome.Text;
+            objProfessor.valorHora = Double.Parse(txtValorHora.Text);
+            objProfessor.telefone = txtTelefone.Text;
+            objProfessor.CadastraProfessor();
+            MessageBox.Show("Registro cadastrado com sucesso!");
+            //Limpando os campos
+            txtNome.Clear();
+            txtCodigo.Clear();
+            txtValorHora.Clear();
+            txtTelefone.Clear();
+            dtgProfessor.DataSource = objProfessor.ListarProfessor();
+        }
     }
 }
