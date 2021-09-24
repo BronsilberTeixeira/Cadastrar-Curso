@@ -38,11 +38,11 @@ namespace ControleDeCursos
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnAlterar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.dtgTurmas = new System.Windows.Forms.DataGridView();
             this.txtHoraInicio = new System.Windows.Forms.TextBox();
             this.txtHoraTermino = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@ namespace ControleDeCursos
             this.cbxProfessor = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTurmas)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCodigo
@@ -124,59 +124,60 @@ namespace ControleDeCursos
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnCadastrar);
+            this.panel1.Controls.Add(this.btnAlterar);
+            this.panel1.Controls.Add(this.btnLimpar);
+            this.panel1.Controls.Add(this.btnExcluir);
             this.panel1.Location = new System.Drawing.Point(15, 149);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(432, 57);
             this.panel1.TabIndex = 21;
             // 
-            // button1
+            // btnCadastrar
             // 
-            this.button1.Location = new System.Drawing.Point(27, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 30);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "CADASTRAR ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Location = new System.Drawing.Point(27, 13);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(90, 30);
+            this.btnCadastrar.TabIndex = 6;
+            this.btnCadastrar.Text = "CADASTRAR ";
+            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnAlterar
             // 
-            this.button2.Location = new System.Drawing.Point(123, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(90, 30);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "ALTERAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAlterar.Location = new System.Drawing.Point(123, 13);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(90, 30);
+            this.btnAlterar.TabIndex = 7;
+            this.btnAlterar.Text = "ALTERAR";
+            this.btnAlterar.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnLimpar
             // 
-            this.button4.Location = new System.Drawing.Point(318, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 30);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "LISTAR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLimpar.Location = new System.Drawing.Point(318, 13);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(90, 30);
+            this.btnLimpar.TabIndex = 9;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnExcluir
             // 
-            this.button3.Location = new System.Drawing.Point(222, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 30);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "EXCLUIR";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExcluir.Location = new System.Drawing.Point(222, 13);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(90, 30);
+            this.btnExcluir.TabIndex = 8;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dtgTurmas
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 228);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(432, 150);
-            this.dataGridView1.TabIndex = 22;
+            this.dtgTurmas.BackgroundColor = System.Drawing.Color.White;
+            this.dtgTurmas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgTurmas.Location = new System.Drawing.Point(15, 228);
+            this.dtgTurmas.Name = "dtgTurmas";
+            this.dtgTurmas.Size = new System.Drawing.Size(432, 150);
+            this.dtgTurmas.TabIndex = 22;
             // 
             // txtHoraInicio
             // 
@@ -238,7 +239,7 @@ namespace ControleDeCursos
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtHoraTermino);
             this.Controls.Add(this.txtHoraInicio);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgTurmas);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
@@ -253,7 +254,7 @@ namespace ControleDeCursos
             this.Text = "Protótipo - TURMAS";
             this.Load += new System.EventHandler(this.FrmTurmas_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgTurmas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,11 +271,11 @@ namespace ControleDeCursos
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnAlterar;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.DataGridView dtgTurmas;
         private System.Windows.Forms.TextBox txtHoraInicio;
         private System.Windows.Forms.TextBox txtHoraTermino;
         private System.Windows.Forms.Label label6;

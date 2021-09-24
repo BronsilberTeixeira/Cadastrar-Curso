@@ -21,9 +21,18 @@ namespace ControleDeCursos
         Turma objTurma = new Turma();
         private void FrmTurmas_Load(object sender, EventArgs e)
         {
-            comboboxProfessor.DataSource = listarProfessor();
-            comboboxProfessor.ValueMember = "codigo";
-            comboboxProfessor.DisplayMember = "nome";
+            cbxProfessor.DataSource = objProfessor.ListarProfessor();
+            cbxProfessor.ValueMember = "codigo";
+            cbxProfessor.DisplayMember = "nome";
+
+            cbxCurso.DataSource = objCurso.Listar();
+            cbxCurso.ValueMember = "codigo";
+            cbxCurso.DisplayMember = "nome";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
