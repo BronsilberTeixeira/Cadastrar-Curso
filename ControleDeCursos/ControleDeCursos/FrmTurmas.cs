@@ -16,5 +16,14 @@ namespace ControleDeCursos
         {
             InitializeComponent();
         }
+        Curso objCurso = new Curso();
+        Professor objProfessor = new Professor();
+        Turma objTurma = new Turma();
+        private void FrmTurmas_Load(object sender, EventArgs e)
+        {
+            comboboxProfessor.DataSource = listarProfessor();
+            comboboxProfessor.ValueMember = "codigo";
+            comboboxProfessor.DisplayMember = "nome";
+        }
     }
 }

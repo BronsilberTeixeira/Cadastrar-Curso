@@ -29,12 +29,12 @@ namespace ControleDeCursos
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtpDataTermino = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -43,22 +43,22 @@ namespace ControleDeCursos
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtHoraInicio = new System.Windows.Forms.TextBox();
+            this.txtHoraTermino = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbxCurso = new System.Windows.Forms.ComboBox();
+            this.cbxProfessor = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 14;
+            this.txtCodigo.Location = new System.Drawing.Point(116, 6);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 14;
             // 
             // label1
             // 
@@ -87,21 +87,21 @@ namespace ControleDeCursos
             this.label5.TabIndex = 12;
             this.label5.Text = "Data de Início:";
             // 
-            // dateTimePicker1
+            // dtpDataInicio
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(116, 40);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 15;
+            this.dtpDataInicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataInicio.Location = new System.Drawing.Point(116, 40);
+            this.dtpDataInicio.Name = "dtpDataInicio";
+            this.dtpDataInicio.Size = new System.Drawing.Size(100, 20);
+            this.dtpDataInicio.TabIndex = 15;
             // 
-            // dateTimePicker2
+            // dtpDataTermino
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(347, 40);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker2.TabIndex = 16;
+            this.dtpDataTermino.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataTermino.Location = new System.Drawing.Point(347, 40);
+            this.dtpDataTermino.Name = "dtpDataTermino";
+            this.dtpDataTermino.Size = new System.Drawing.Size(100, 20);
+            this.dtpDataTermino.TabIndex = 16;
             // 
             // label2
             // 
@@ -178,19 +178,19 @@ namespace ControleDeCursos
             this.dataGridView1.Size = new System.Drawing.Size(432, 150);
             this.dataGridView1.TabIndex = 22;
             // 
-            // textBox2
+            // txtHoraInicio
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 23;
+            this.txtHoraInicio.Location = new System.Drawing.Point(116, 78);
+            this.txtHoraInicio.Name = "txtHoraInicio";
+            this.txtHoraInicio.Size = new System.Drawing.Size(100, 20);
+            this.txtHoraInicio.TabIndex = 23;
             // 
-            // textBox3
+            // txtHoraTermino
             // 
-            this.textBox3.Location = new System.Drawing.Point(347, 78);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 24;
+            this.txtHoraTermino.Location = new System.Drawing.Point(347, 78);
+            this.txtHoraTermino.Name = "txtHoraTermino";
+            this.txtHoraTermino.Size = new System.Drawing.Size(100, 20);
+            this.txtHoraTermino.TabIndex = 24;
             // 
             // label6
             // 
@@ -201,21 +201,21 @@ namespace ControleDeCursos
             this.label6.TabIndex = 25;
             this.label6.Text = "Curso:";
             // 
-            // comboBox1
+            // cbxCurso
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(347, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 26;
+            this.cbxCurso.FormattingEnabled = true;
+            this.cbxCurso.Location = new System.Drawing.Point(347, 5);
+            this.cbxCurso.Name = "cbxCurso";
+            this.cbxCurso.Size = new System.Drawing.Size(100, 21);
+            this.cbxCurso.TabIndex = 26;
             // 
-            // comboBox2
+            // cbxProfessor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(116, 114);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 28;
+            this.cbxProfessor.FormattingEnabled = true;
+            this.cbxProfessor.Location = new System.Drawing.Point(116, 114);
+            this.cbxProfessor.Name = "cbxProfessor";
+            this.cbxProfessor.Size = new System.Drawing.Size(100, 21);
+            this.cbxProfessor.TabIndex = 28;
             // 
             // label7
             // 
@@ -232,25 +232,26 @@ namespace ControleDeCursos
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(460, 394);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbxProfessor);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbxCurso);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtHoraTermino);
+            this.Controls.Add(this.txtHoraInicio);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dtpDataTermino);
+            this.Controls.Add(this.dtpDataInicio);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Name = "FrmTurmas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Protótipo - TURMAS";
+            this.Load += new System.EventHandler(this.FrmTurmas_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -260,12 +261,12 @@ namespace ControleDeCursos
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpDataInicio;
+        private System.Windows.Forms.DateTimePicker dtpDataTermino;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
@@ -274,11 +275,11 @@ namespace ControleDeCursos
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtHoraInicio;
+        private System.Windows.Forms.TextBox txtHoraTermino;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbxCurso;
+        private System.Windows.Forms.ComboBox cbxProfessor;
         private System.Windows.Forms.Label label7;
     }
 }
