@@ -28,17 +28,17 @@ namespace ControleDeCursos
         {
             //CADASTRAR
             objTurma.codigo = int.Parse(txtCodigo.Text);
-            objProfessor.nome = txtNome.Text;
-            objProfessor.valorHora = Double.Parse(txtValorHora.Text);
-            objProfessor.telefone = txtTelefone.Text;
+            objTurma.professor = cbxProfessor.Text;
+            objTurma.curso = cbxCurso.Text;
+            objTurma.hora_inicio = int.Parse(txtHoraInicio.Text);
+            objTurma.hora_termino = int.Parse(txtHoraTermino.Text);
+            objTurma.data_inicio = dtpDataInicio.Text;
+            objTurma.data_termino = dtpDataTermino.Text;
             objProfessor.CadastraProfessor();
             MessageBox.Show("Registro cadastrado com sucesso!");
             //Limpando os campos
-            txtNome.Clear();
-            txtCodigo.Clear();
-            txtValorHora.Clear();
-            txtTelefone.Clear();
-            dtgProfessor.DataSource = objProfessor.ListarProfessor();
+     
+            dtgTurmas.DataSource = objTurma.ListarTurma();
         }
     }
 }

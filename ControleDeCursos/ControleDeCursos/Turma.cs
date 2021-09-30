@@ -10,7 +10,7 @@ namespace ControleDeCursos
     class Turma
     {
         public int codigo, hora_inicio, hora_termino;
-        public string data_inicio, data_termino, professor;
+        public string data_inicio, data_termino, professor, curso;
         string tabela = "tbl_turma";
         Conexao objConexao = new Conexao();
 

@@ -113,3 +113,4 @@ H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDe
 H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.csproj.GenerateResource.cache
 H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.exe
 H:\GitHub\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.pdb
+C:\Users\HP\source\Cadastrar-Curso\ControleDeCursos\ControleDeCursos\obj\Debug\ControleDeCursos.exe.config
