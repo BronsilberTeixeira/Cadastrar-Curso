@@ -178,6 +178,7 @@ namespace ControleDeCursos
             this.dtgTurmas.Name = "dtgTurmas";
             this.dtgTurmas.Size = new System.Drawing.Size(432, 150);
             this.dtgTurmas.TabIndex = 22;
+            this.dtgTurmas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgTurmas_CellContentClick);
             // 
             // txtHoraInicio
             // 

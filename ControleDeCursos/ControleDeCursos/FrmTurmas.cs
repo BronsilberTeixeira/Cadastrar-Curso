@@ -41,5 +41,10 @@ namespace ControleDeCursos
      
             dtgTurmas.DataSource = objTurma.ListarTurma();
         }
+
+        private void dtgTurmas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
